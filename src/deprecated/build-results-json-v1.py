@@ -16,7 +16,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/gpl-3.0.txt>.
 '''
 
 import sys
-sys.path.append('../shared')
+sys.path.append('./shared')
 import functions as f
 
 def main():
