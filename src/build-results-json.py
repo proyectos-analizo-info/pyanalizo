@@ -19,7 +19,7 @@ import sys
 sys.path.append('./shared')
 import functions as f
 
-if __name__ == '__main__':
+def main():
     
     tasks, answers = f.parse_json_file('tasks.json'), f.parse_json_file('answers.json')
     
@@ -70,3 +70,6 @@ if __name__ == '__main__':
         d_results[idx]['answers'][idu] = d_user
     
     f.write_json_file('results.json', d_results)
+
+if __name__ == '__main__':
+    main()
